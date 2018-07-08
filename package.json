@@ -1,0 +1,33 @@
+{
+  "name": "flow-field",
+  "version": "1.0.0",
+  "description": "A 2D Vector Field library",
+  "main": "flow-field.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evelios/FlowField.git"
+  },
+  "keywords": [
+    "vector",
+    "field",
+    "flow",
+    "2D"
+  ],
+  "author": "Thomas Waters",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Evelios/FlowField/issues"
+  },
+  "homepage": "https://github.com/Evelios/FlowField#readme",
+  "devDependencies": {
+    "tape": "^4.9.1",
+    "vector": "git+https://github.com/Evelios/Vector.git"
+  },
+  "dependencies": {
+    "test-fuzzy-array": "^1.0.1",
+    "vector": "git+https://github.com/Evelios/Vector.git"
+  }
+}
