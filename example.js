@@ -33,7 +33,7 @@ var params = {
         'Source'            : FlowField.source,
         'Sink'              : FlowField.sink,
         'Clockwise'         : FlowField.clockwise,
-        'Counter Clockwise' : FlowField.CounterClockwise
+        'Counter Clockwise' : FlowField.counterClockwise
     }
 };
 

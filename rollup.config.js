@@ -1,3 +1,7 @@
+// import path from 'path';
+
+// const vector = path.resolve(__dirname, './node_modules/vector/Vector.js');
+
 export default [
   {
     input: './flow-field.js',
@@ -5,8 +9,11 @@ export default [
       name: 'FlowField',
       file: 'bundle.js',
       format: 'umd',
-      globals: 'Vector',
+      globals: {
+        'vector': 'Vector'
+      },
     },
+    
     external: ['vector']
   },
 ];

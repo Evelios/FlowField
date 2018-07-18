@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/Evelios/FlowField#readme",
   "devDependencies": {
+    "rollup": "^0.63.2",
+    "rollup-plugin-node-resolve": "^3.3.0",
     "tape": "^4.9.1",
     "vector": "git+https://github.com/Evelios/Vector.git"
   },

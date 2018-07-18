@@ -6,12 +6,14 @@
 
   Vector = Vector && Vector.hasOwnProperty('default') ? Vector['default'] : Vector;
 
+  console.log(Vector);
+
   const FlowField = {
 
     uniform : function(angle) {
       return (output_pos) => {
         return Vector.Polar(1, angle);
-      }
+      };
     },
 
     source : function(input_pos) {

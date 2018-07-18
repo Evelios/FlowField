@@ -5,7 +5,7 @@ const FlowField = {
   uniform : function(angle) {
     return (output_pos) => {
       return Vector.Polar(1, angle);
-    }
+    };
   },
 
   source : function(input_pos) {
