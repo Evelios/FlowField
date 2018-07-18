@@ -1,12 +1,10 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory() :
-  typeof define === 'function' && define.amd ? define(factory) :
-  (factory());
-}(this, (function () { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('vector')) :
+  typeof define === 'function' && define.amd ? define(['vector'], factory) :
+  (global.FlowField = factory(global.Vector));
+}(this, (function (Vector) { 'use strict';
 
-  (function () {
-
-  const Vector = require('vector');
+  Vector = Vector && Vector.hasOwnProperty('default') ? Vector['default'] : Vector;
 
   const FlowField = {
 
@@ -47,13 +45,6 @@
 
   };
 
-  if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
-    module.exports = FlowField;
-  }
-  else {
-    window.FlowField = FlowField;
-  }
-
-  }) ();
+  return FlowField;
 
 })));

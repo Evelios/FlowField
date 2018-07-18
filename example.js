@@ -63,6 +63,7 @@ function createAndRender() {
 function create() {
     var field_center = [0, 0];
     flow_field = params.field_functions[params.field_choice](field_center);
+    console.log(flow_field);
     // points = poisson(bbox, densityFunction[params.distribution]);
 }
 

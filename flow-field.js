@@ -1,5 +1,3 @@
-(function () {
-
 import Vector from 'vector';
 
 const FlowField = {
@@ -39,13 +37,6 @@ const FlowField = {
     });
   },
 
-}
+};
 
-if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
-  module.exports = FlowField;
-}
-else {
-  window.FlowField = FlowField;
-}
-
-}) ();
+export default FlowField;
