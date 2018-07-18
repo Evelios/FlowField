@@ -4,7 +4,8 @@
   "description": "A 2D Vector Field library",
   "main": "flow-field.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "build": "rollup main.js --file bundle.js --format umd --name'myBundle'"
   },
   "repository": {
     "type": "git",
