@@ -6,8 +6,6 @@
 
   Vector = Vector && Vector.hasOwnProperty('default') ? Vector['default'] : Vector;
 
-  console.log(Vector);
-
   const FlowField = {
 
     uniform : function(angle) {
