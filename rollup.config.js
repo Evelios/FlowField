@@ -1,19 +1,17 @@
-// import path from 'path';
+import nodeResolve from 'rollup-plugin-node-resolve';
+import autoExternal from 'rollup-plugin-auto-external';
+import commonjs from 'rollup-plugin-commonjs';
 
-// const vector = path.resolve(__dirname, './node_modules/vector/Vector.js');
-
-export default [
-  {
-    input: './flow-field.js',
-    output: {
-      name: 'FlowField',
-      file: 'bundle.js',
-      format: 'umd',
-      globals: {
-        'vector': 'Vector'
-      },
-    },
-    
-    external: ['vector']
+export default {
+  input: './flow-field.js',
+  output: {
+    name: 'FlowField',
+    file: 'bundle.js',
+    format: 'umd',
   },
-];
+  plugins: [
+    nodeResolve(),
+    autoExternal(),
+    commonjs(),
+  ],
+};
