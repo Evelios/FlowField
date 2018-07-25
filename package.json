@@ -2,7 +2,7 @@
   "name": "flow-field",
   "version": "1.0.0",
   "description": "A 2D Vector Field library",
-  "main": "build.js",
+  "main": "bundle.js",
   "scripts": {
     "test": "node test.js",
     "build": "rollup -c"
