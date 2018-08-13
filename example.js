@@ -78,8 +78,7 @@ function setUpGui() {
 function create() {
     var field_center = [width / 2, height / 2];
     flow_field = params.field_functions[params.field_choice](field_center);
-    points = Poisson(bbox, params.density);
-    // points = Poisson(bbox, params.densityFunction[params.distribution]);
+    points = poisson(bbox, params.density);
 }
 
 function update() {

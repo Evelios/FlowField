@@ -204,6 +204,15 @@
             return angle;
         };
 
+        /**
+         * Limit the max magnitude of a vector. If the magnitude is greater than
+         * the input, limit it to the input ammount. Otherwise leave the vector
+         * alone.
+         */
+        const clamp = function(vec, limit) {
+            return magnitude(vec) > limit ? Polar(limit, angle(vec)) : vec;
+        };
+
         //---- Basic Math Functions ----
 
         /**
@@ -260,7 +269,8 @@
          * @returns {Vector} A vector that is the normal compenent of the vector
          */
         const normalize = function(vec) {
-            return divide(vec, magnitude(vec));
+            const mag = magnitude(vec);
+            return mag > 0 ? divide(vec, magnitude(vec)) : zero();
         };
 
         /**
@@ -507,6 +517,7 @@
             magnitude: magnitude,
             magSquared: magSquared,
             angle: angle,
+            clamp: clamp,
             add: add,
             subtract: subtract,
             multiply: multiply,
